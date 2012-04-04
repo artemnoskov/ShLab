@@ -27,13 +27,21 @@
         vertical-align: top;
 }
 
+#product_list .imagetd{
+  border-radius: 70px 0px 0px 10px;
+}
+
 #product_list .list_image {
-  width:        60px;
-  height:       70px;
+  width:        80px;
+  height:       90px;
+  border: 1px;
+  border-style: dashed;
+  border-radius: 5px 5px 5px 5px;
 }
 
 #product_list .list_description {
   width:        60%;
+  
 }
 
 #product_list .list_description dl {
@@ -51,17 +59,46 @@
 }
 
 #product_list .list_actions {
-  font-size:    x-small;
+  font-size:    large;
   text-align:   right;
   padding-left: 1em;
+  border-radius: 0px 10px 10px 0px;
+  -moz-border-radius: 10px;
 }
 
+#product_list .list_line_even #linkbg{
+background:   #FFFF99;
+width: 70px;
+float:right;
+text-align: center;  
+padding: 5px;
+margin: 1px;
+border-radius: 100px 100px 100px 100px;
+}
+
+#product_list .list_line_odd #linkbg{
+background:   #FFCC66;
+width: 70px;
+float:right;
+text-align: center;  
+padding: 5px;
+margin: 1px;
+border-radius: 100px 100px 100px 100px;
+
+}
+
+#product_list  #linkbg:hover{background-color:#FF704D;}
+
+#alink:link{color:#FF704D;}
+#alink:visited{color:#FF704D;}
+#alink:hover{color:#FFFFFF;}
+
 #product_list .list_line_even {
-  background:   #e0f8f8;
+  background:   #FFCC66;
 }
 
 #product_list .list_line_odd {
-  background:   #f8b0f8;
+  background:   #FFFF99;
 }
 
 /* An entry in the store catalog */
