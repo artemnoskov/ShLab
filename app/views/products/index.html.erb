@@ -1,5 +1,5 @@
 <div id="product_list">
-<h1>Listing products</h1>
+<h1>Список товаров</h1>
 <table>
 <% @products.each do |product| %>
 <tr class="<%= cycle('list_line_odd', 'list_line_even') %>">
@@ -16,9 +16,9 @@
 </td>
 
 <td class="list_actions">
-<%= link_to(product, :id => "alink") do %> <div id = "linkbg">Show</div> <% end %><br/>
-<%= link_to(edit_product_path(product), :id => "alink") do %> <div id = "linkbg">Edit</div>  <% end %><br/>
-<%= link_to(product, :confirm => 'Are you sure?', :method => :delete, :id => "alink") do %> <div id = "linkbg">Destroy</div> <% end %>
+<%= link_to(product, :id => "alink") do %> <div id = "linkbg">Подробнее</div> <% end %><br/>
+<%= link_to(edit_product_path(product), :id => "alink") do %> <div id = "linkbg">Править</div>  <% end %><br/>
+<%= link_to(product, :confirm => 'Вы уверены?', :method => :delete, :id => "alink") do %> <div id = "linkbg">Удалить</div> <% end %>
 
 </td>
 </tr>
@@ -26,4 +26,4 @@
 </table>
 </div>
 <br />
-<%= link_to 'New product', new_product_path %>
+<%= link_to(new_product_path, :id => "alink") do %> <div id = "link_anbg">Добавить продукт</div><% end %>  

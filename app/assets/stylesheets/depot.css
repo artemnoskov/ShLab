@@ -11,23 +11,25 @@
 
 
 #store h1 {
-        font:  150% sans-serif;
+        font: 150% sans-serif;
         color: #226;
-        border-bottom: 3px dotted #77d;
+        border-bottom: 2px dashed gray;
 }
 
 /* Styles for products/index */
 
 #product_list table {
-        border-collapse: collapse;
+        width:65%;
+		border-collapse: collapse;
 }
 
 #product_list table tr td {
-        padding: 5px;
+        padding: 10px;
         vertical-align: top;
 }
 
 #product_list .imagetd{
+  width:10%;
   border-radius: 70px 0px 0px 10px;
 }
 
@@ -36,12 +38,18 @@
   height:       90px;
   border: 1px;
   border-style: dashed;
+  border-color: #FF704D;
   border-radius: 5px 5px 5px 5px;
+  -moz-box-shadow: 5px 5px 5px 2px #888;
+  -webkit-box-shadow: 5px 5px 5px 2px #888;
+  box-shadow: 5px 5px 5px 2px #888;
 }
 
 #product_list .list_description {
-  width:        60%;
-  
+  border-right: 1px;
+  border-style: dashed;
+  border-color: #FF704D;
+  width: 80%;
 }
 
 #product_list .list_description dl {
@@ -59,17 +67,19 @@
 }
 
 #product_list .list_actions {
+
   font-size:    large;
   text-align:   right;
   padding-left: 1em;
+  width:10%;
   border-radius: 0px 10px 10px 0px;
   -moz-border-radius: 10px;
 }
 
 #product_list .list_line_even #linkbg{
 background:   #FFFF99;
-width: 70px;
-float:right;
+width: 102px;
+float: right;
 text-align: center;  
 padding: 5px;
 margin: 1px;
@@ -78,20 +88,30 @@ border-radius: 100px 100px 100px 100px;
 
 #product_list .list_line_odd #linkbg{
 background:   #FFCC66;
-width: 70px;
+width: 102px;
 float:right;
 text-align: center;  
 padding: 5px;
 margin: 1px;
 border-radius: 100px 100px 100px 100px;
-
 }
 
 #product_list  #linkbg:hover{background-color:#FF704D;}
-
 #alink:link{color:#FF704D;}
 #alink:visited{color:#FF704D;}
 #alink:hover{color:#FFFFFF;}
+
+#link_anbg{
+background:   #FFCC66;
+width: 124px;
+float:left;
+text-align: center;  
+padding: 5px;
+margin: 0px;
+border-radius: 100px 100px 100px 100px;
+}
+
+#link_anbg:hover{background-color:#FF704D;}
 
 #product_list .list_line_even {
   background:   #FFCC66;
@@ -106,26 +126,29 @@ border-radius: 100px 100px 100px 100px;
 #store  .entry {
   overflow: auto;
   margin-top: 1em;
-  border-bottom: 1px dotted #77d;
+  border-bottom: 1px dotted gray;
 }
 
 #store  .title {
   font-size: 120%;
   font-family: sans-serif;
-}
+ }
 
 #store .entry img {
   width: 80px;
   margin-right: 5px;
   margin-bottom: 5px;
   float: left;
+  border: 1px;
+  border-style: dashed;
+  border-color: gray;
 }
 
 
 #store .entry h3 {
  margin-top: 0;
  margin-bottom: 2px;
- color: #227;
+ color: #FF704D;
 }
 
 #store .entry p {
@@ -143,7 +166,61 @@ border-radius: 100px 100px 100px 100px;
 }
 
 #store .entry  .price {
-  color: #44a;
+  color: #FF704D;
   font-weight: bold;
   margin-right: 2em;
 }
+
+
+/* Styles for main page */
+#banner {
+background: #FFCC66;
+padding-top: 10px;
+padding-bottom: 10px;
+border-bottom: 4px solid;
+border-radius: 0px 0px 0px 0px;
+font: small-caps 40px/40px "Times New Roman", serif;
+color: #FF704D;
+text-align: left;
+
+
+}
+#banner img {
+float: left;
+padding-left:15px;
+width:        80px;
+height:       45px;
+}
+#columns {
+background: white;
+}
+#main {
+margin-left: 13em;
+padding-top: 4ex;
+padding-left: 2em;
+background: white;
+}
+#side {
+float: left;
+margin-top: 80px;
+padding-top: 1em;
+padding-left: 1em;
+padding-bottom: 1em;
+width: 12em;
+background: #FF704D;
+-moz-box-shadow: 5px 5px 5px 2px #888;
+-webkit-box-shadow: 5px 5px 5px 2px #888;
+box-shadow: 5px 5px 5px 2px #888;
+}
+
+#side #mainlink{
+font-size: large;
+width: 146px;
+left: 0px;
+text-align: left;  
+padding: 5px;
+margin: 0px;
+border-radius: 100px 0px 0px 100px;
+}
+#mainlink:hover{background-color:#FFCC66;}
+#mainlink:active{background-color:#FFCC66;}

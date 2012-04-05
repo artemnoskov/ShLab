@@ -7,9 +7,23 @@
   <%= javascript_include_tag :application %>
   <%= csrf_meta_tags %>
 </head>
-<body>
-
-<%= yield %>
-
+<body id="store">
+ <div id="banner">
+	<%= image_tag("logo.png" ) %>
+	<%= @page_title || "BookStore" %>
+ </div>
+ <div id="columns">
+	<div id="side">
+		<a href="http://localhost:3000/store/index"><div id = "mainlink">BookStore</div></a><br />
+		<a href="http://www..../faq"><div id = "mainlink">Вопросы</div></a><br />
+		<a href="http://www..../news"><div id = "mainlink">Новости</div></a><br />
+		<a href="http://www..../contact"><div id = "mainlink">Контакты</div></a><br />
+		
+ 	</div>
+	<div id="main">
+	
+	<%= yield %>
+	</div>
+ </div>
 </body>
 </html>
