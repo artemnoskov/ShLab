@@ -171,6 +171,9 @@ border-radius: 100px 100px 100px 100px;
   margin-right: 2em;
 }
 
+#store .entry form, #store .entry form div {
+display: inline;
+}
 
 /* Styles for main page */
 #banner {
@@ -195,7 +198,7 @@ background: white;
 #main {
 margin-left: 14em;
 padding-top: 4ex;
-padding-left: 1em;
+padding-left: 3em;
 background: white;
 width: 80%;
 }
@@ -205,7 +208,7 @@ margin-top: 80px;
 padding-top: 1em;
 padding-left: 1em;
 padding-bottom: 1em;
-width: 13em;
+width: 15em;
 background: #FFCC66;
 border: 1px;
   border-style: dashed;
@@ -217,7 +220,7 @@ box-shadow: 5px 5px 5px 2px #888;
 
 #side #mainlink{
 font-size: large;
-width: 146px;
+width: 186px;
 left: 0px;
 text-align: left;  
 padding: 5px;
@@ -227,3 +230,32 @@ border-radius: 70px 0px 0px 10px;
 }
 #mainlink:hover{background-color:#FF704D;}
 #mainlink:active{background-color:#FF704D;}
+
+/* Styles for the cart in the main page */
+#store .cart_title {
+font: 160% bold;
+padding-top: 50px;
+
+}
+#store .item_price, #store .total_line {
+text-align: right;
+}
+#store .total_line .total_cell {
+font-weight: bold;
+border-top: 1px solid #FF704D;
+}
+
+/* Styles for the cart in the sidebar */
+#cart, #cart table {
+font-size: smaller;
+color: black;
+}
+#cart table {
+border-top: 1px dashed #FF704D;
+border-bottom: 1px dashed #FF704D;
+margin-bottom: 5px;
+border-collapse: collapse;
+}
+#qtycart {
+border-radius: 70px 0px 0px 10px;
+}
