@@ -19,7 +19,7 @@
 /* Styles for products/index */
 
 #product_list table {
-        width:65%;
+        width:80%;
 		border-collapse: collapse;
 }
 
@@ -177,14 +177,12 @@ border-radius: 100px 100px 100px 100px;
 background: #FFCC66;
 padding-top: 10px;
 padding-bottom: 10px;
-border-bottom: 4px solid;
 border-radius: 0px 0px 0px 0px;
 font: small-caps 40px/40px "Times New Roman", serif;
 color: #FF704D;
 text-align: left;
-
-
 }
+
 #banner img {
 float: left;
 padding-left:15px;
@@ -195,10 +193,11 @@ height:       45px;
 background: white;
 }
 #main {
-margin-left: 13em;
+margin-left: 14em;
 padding-top: 4ex;
-padding-left: 2em;
+padding-left: 1em;
 background: white;
+width: 80%;
 }
 #side {
 float: left;
@@ -206,8 +205,11 @@ margin-top: 80px;
 padding-top: 1em;
 padding-left: 1em;
 padding-bottom: 1em;
-width: 12em;
-background: #FF704D;
+width: 13em;
+background: #FFCC66;
+border: 1px;
+  border-style: dashed;
+  border-color: #FF704D;
 -moz-box-shadow: 5px 5px 5px 2px #888;
 -webkit-box-shadow: 5px 5px 5px 2px #888;
 box-shadow: 5px 5px 5px 2px #888;
@@ -220,7 +222,8 @@ left: 0px;
 text-align: left;  
 padding: 5px;
 margin: 0px;
-border-radius: 100px 0px 0px 100px;
+font-weight:bold;
+border-radius: 70px 0px 0px 10px;
 }
-#mainlink:hover{background-color:#FFCC66;}
-#mainlink:active{background-color:#FFCC66;}
+#mainlink:hover{background-color:#FF704D;}
+#mainlink:active{background-color:#FF704D;}
